@@ -1,0 +1,29 @@
+Loaded project.mk
+---INFO: enter Libraries/Cordio/platform/targets/maxim/build/codio.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO: USE_EXACTLE=1
+controller
+---INFO: enter Libraries/Cordio/controller/build/common/gcc/config.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO: controller C_FLAGS=-std=c99 -Wall -Wextra -Wno-unused-parameter -Wshadow -Wno-expansion-to-defined  -fno-common -fomit-frame-pointer -ffunction-sections -fdata-sections -Os -g -DDEBUG -DccBLE_HOST=1 -DccBLE_CONTROLLER=1
+---INFO: controller LD_FLAGS=-Wl,-Map=bin/ -Wl,--gc-sections --specs=nano.specs --specs=nosys.specs
+---INFO: exit  Libraries/Cordio/controller/build/common/gcc/config.mk
+ble-apps
+---INFO: enter Libraris/Cordio/ble-apps/build/common/gcc/config.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO: CFG_DEV += HCI_TR_EXACTLE=1
+---INFO: ble-apps C_FLAGS=-std=c99 -Wall -Wextra -Wno-unused-parameter -Wshadow -Wno-expansion-to-defined  -fno-common -fomit-frame-pointer -ffunction-sections -fdata-sections -Os -g -DDEBUG -DccBLE_HOST=1 -DccBLE_CONTROLLER=1 -std=c99 -Wall -Wextra -Wno-unused-parameter -Wshadow -Wno-expansion-to-defined  -fno-common -fomit-frame-pointer -ffunction-sections -fdata-sections -Os -g -DDEBUG -DcBLE_HOST=1 -DcBLE_CONTROLLER=1
+---INFO: ble-apps LD_FLAGS=-Wl,-Map=bin/ -Wl,--gc-sections --specs=nano.specs --specs=nosys.specs
+---INFO: exit  Libraris/Cordio/ble-apps/build/common/gcc/config.mk
+---INFO: enter Libraries/Cordio/ble-apps/build/common/gcc/source.mk, BT_VER=9, USE_EXACTLE=1
+---INFO: enter Libraries/Cordio/platform/targets/maxim/build/sources.mk
+---INFO: enter Libraries/Cordio/platform/targets/maxim/build/sources_cordio.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO: exit  Libraries/Cordio/platform/targets/maxim/build/sources_cordio.mk
+---INFO: enter Libraries/Cordio/platform/targets/maxim/build/sources_bsp.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO use libphy.a
+---INFO: exit  Libraries/Cordio/platform/targets/maxim/build/sources_bsp.mk
+---INFO: exit  Libraries/Cordio/platform/targets/maxim/build/sources.mk
+---INFO: exit  Libraries/Cordio/ble-apps/build/common/gcc/source.mk
+---INFO: enter Libraries/Cordio/platform/targets/maxim/max32655/build/config.mk, BLE_HOST=1, BLE_CONTROLLER=1, RISCV_LOAD=, RISCV_APP=
+---INFO: exit  Libraries/Cordio/platform/targets/maxim/max32655/build/config.mk
+---INFO: exit  Libraries/Cordio/platform/targets/maxim/build/codio.mk
+arm-none-eabi-size --format=berkeley /home/ying-cai/Workspace/msdk_yc/Examples/MAX32655/BLE_fcc_dual_core/BLE5_ctr_riscv/build/BLE5_ctr_riscv.elf
+   text	   data	    bss	    dec	    hex	filename
+ 236296	   3404	  49552	 289252	  469e4	/home/ying-cai/Workspace/msdk_yc/Examples/MAX32655/BLE_fcc_dual_core/BLE5_ctr_riscv/build/BLE5_ctr_riscv.elf
